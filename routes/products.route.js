@@ -8,6 +8,6 @@ router.get('/api/product/get', productController.getProduct);
 router.patch('/api/product/edit', productController.editProduct);
 router.delete('/api/product/delete', productController.deleteProduct);
 
-export def
+export default router
 
 
