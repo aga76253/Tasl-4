@@ -14,6 +14,13 @@ app.use(router);
 
 dbConnect();
 
+app.get('/', (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: "Server is running successfully!"
+  });
+});
+
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`); 
