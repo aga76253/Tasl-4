@@ -5,7 +5,7 @@ const router = Router();
 
 router.post('/api/product/create', productController.createProduct);
 router.get('/api/product/get', productController.getProduct);
-router.patch('/api/product/edit', productController.editProduct);
+router.patch('/api/product/edit/:id', productController.editProduct);
 router.delete('/api/product/delete', productController.deleteProduct);
 
 export default router
